@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+  </head>
+  <body>
+      <section id="home">
+        <header>
+          Unit Conversions
+        </header>
+        <nav>
+          <div class="topdiv">
+            <a href="#temperature"><button  class="topmenu">Temperature</button></a>
+            <a href="#weight"><button  class="topmenu">Weight</button></a>
+            <a href="#distance"><button  class="topmenu">Distance</button></a>
+          </div>
+        </nav>
+      </section>    
+      <div style="clear:both;"></div>
+     
+      <div id="all-conversion-sections">
+
+        <section id="temperature"  class="b temperature">
+          <div id="tmp">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
+              <figcaption>Celcius to Farenheit Conversion</figcaption>
+            </figure>
+            <article> 
+
+              <fieldset>
+                <legend>Temperature</legend>
+                <label for="Temperature">Celsius</label> <br/>
+
+ <input type="number" id="c" value="0"> <br/><br/>
+
+                <button id="temperature" onclick="temp()"> Convert </button> <br/><br/>
+
+                <input type="number" id="f" value="32"><br/>
+
+ <label for="Temperature">Fahrenheit</label>
+              </fieldset>
+              <aside>
+                You can convert from Celsius to Fahrenheit and vice versa eg: if you want to convert from Celsius to Fahrenheit write the Celsius value and clear the Fahrenheit value and vice versa
+              </aside>
+            </article>
+          </div>
+        </section>
+
+        <div style="clear:both;"></div>
+      
+        <section id="weight"  class="b weight">          
+          <div id="wgt">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"  width="150px"/>
+              <figcaption>Kilograms to Pound Conversion</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <legend>Weight</legend>
+                <label for="Weight">KG</label> <br/>
+
+ <input type="number" id="kg" value="1"> <br/><br/>
+
+                <button id="weight" onclick="weight()"> Convert </button>  <br/><br/>
+
+ 
+                <input type="number" id="lbs" value="2.204">  <br/>
+
+  <label for="Weight">Pounds</label>    
+              </fieldset>
+              <aside>
+                You can convert from Kilograms to Pound and vice versa eg: if you want to convert from Kilograms to Pound write the Kilograms value and clear the Pound value and vice versa
+              </aside>      
+            </article>
+          </div>
+        </section>
+
+        <div style="clear:both;"></div>
+
+        <section id="distance"  class="b distance">
+          <div id="dst">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"  width="150px"/>
+              <figcaption>Kilometers to Miles Conversion</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <legend>Distance</legend>
+                  <label for="Distance">KM</label> <br/>
+
+ <input type="number" id="km" value="1.609">  <br/><br/>
+
+                  <button id="distance" onclick="distance()"> Convert </button> <br/><br/>
+
+                  <input type="number" id="pd" value="1">  <br/>
+
+  <label for="Distance">Miles</label>
+              </fieldset>
+              <aside>
+                You can convert from Kilometer to miles and vice versa eg: if you want to convert from Kilometer to miles write the Kilometer value and clear the miles value and vice versa
+              </aside>
+    
+            </article>
+          </div>
+        </section>
+        <div style="clear:both;"></div>
+
+      </div>
+
+    <div id="go-home" class="iconbutton">
+      <a href="#home">
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+      </a>
+    </div>
+
+    <footer>&#169; This Interest Calculator belongs to <a href="https://github.com/nesredin18"> Nesredin Negusie</a> contact at <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=negusienesredin@gmail.com" target="_blank">email</a>
+</footer>
+  </body>
+</html>
